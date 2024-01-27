@@ -1,7 +1,7 @@
 <?php
 
     define('DB_DRIVER','mysql');
-    define('DB_NAME','plain_login');
+    define('DB_NAME','the_list');
     define('DB_HOST','localhost');
     define('DB_PORT','');
     define('DB_USER','root');

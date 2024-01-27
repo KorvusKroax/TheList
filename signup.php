@@ -25,25 +25,25 @@
 <?php require('header.php'); ?>
 
 <main>
-    <form method="post">
-        <div>
+    <form class="container tiny" method="post">
+        <div class="field">
             <label for="name">username:</label><br>
-            <input id="name" type="text" name="name" value="<?= isset($name) ? $name : "" ?>">
+            <input id="name" class="input-text" type="text" name="name" value="<?= isset($name) ? $name : "" ?>">
         </div>
-        <div>
+        <div class="field">
             <label for="email">email:</label><br>
-            <input id="email" type="email" name="email" value="<?= isset($email) ? $email : "" ?>">
+            <input id="email" class="input-text" type="email" name="email" value="<?= isset($email) ? $email : "" ?>">
         </div>
-        <div>
+        <div class="field">
             <label for="password">password:</label><br>
-            <input id="password" type="password" name="password" value="<?= isset($password) ? $password : "" ?>">
+            <input id="password" class="input-text" type="password" name="password" value="<?= isset($password) ? $password : "" ?>">
         </div>
-        <div>
+        <div class="field">
             <label for="confirmPassword">confirm password:</label><br>
-            <input id="confirmPassword" type="password" name="confirmPassword" value="<?= isset($confirmPassword) ? $confirmPassword : "" ?>">
+            <input id="confirmPassword" class="input-text" type="password" name="confirmPassword" value="<?= isset($confirmPassword) ? $confirmPassword : "" ?>">
         </div>
         <br>
-        <div>
+        <div class="inline-full">
             <button type="submit" name="signup">signup</button>
             <a href="login">login</a>
         </div>

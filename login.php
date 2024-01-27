@@ -21,20 +21,22 @@
 <?php require('header.php'); ?>
 
 <main>
-    <form method="post">
-        <div>
+    <form class="container tiny" method="post">
+        <div class="field">
             <label for="name">username:</label><br>
-            <input id="name" type="text" name="name" value="<?= isset($name) ? $name : "" ?>">
+            <input id="name" class="input-text" type="text" name="name" value="<?= isset($name) ? $name : "" ?>">
         </div>
-        <div>
+        <div class="field">
             <label for="password">password:</label><br>
-            <input id="password" type="password" name="password" value="<?= isset($password) ? $password : "" ?>">
+            <input id="password" class="input-text" type="password" name="password" value="<?= isset($password) ? $password : "" ?>">
         </div>
         <br>
-        <div>
+        <div class="inline-full">
             <button type="submit" name="login">login</button>
-            <a href="signup">signup</a>
-            <!-- <a href="#">forgot password?</a><br> -->
+            <div class="right-list">
+                <a href="signup">signup</a>
+                <a href="#">forgot password?</a>
+            </div>
         </div>
     </form>
 </main>
