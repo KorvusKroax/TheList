@@ -9,12 +9,12 @@
 
         <link rel="stylesheet" href="css/main.css">
 
-        <title>LoginPage</title>
+        <title>TheList</title>
     </head>
     <body>
         <header>
             <div class="container wide inline-full">
-                <h1>HEADER</h1>
+                <h1>TheList</h1>
                 <?php if (isset($_SESSION['user'])) : ?>
                     <button onClick="location.href='logout'">logout</button>
                 <?php endif; ?>
